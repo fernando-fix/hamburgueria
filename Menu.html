@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="Stylesheet">
+    <link href="css/cabecalho.css" rel="Stylesheet">
+    <link href="css/menu.css" rel="Stylesheet">
+    <link href="css/tabela.css" rel="Stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,&display=block" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/1555/PNG/512/fast-food-icons-freeburger_107425.png" />
+    <title>Hamburgueria</title>
+</head>
+<body>
+    <video class="bg_video" poster="burger.png" autoplay muted  loop>
+        <source src="video/Hamburguer.mp4" type="video/mp4">
+    </video>
+    <header class="cabecalho">
+        <a href="index.html">
+            <img 	class="cabecalho__logo" src="img/ticos-logo.png" alt="Logo da Hamburgueria"></a>
+        </a>
+        <nav>
+            <div>
+                <ul>
+                    <li class="cabecalho__item-menu .cabecalho__item-menu-botao">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="cabecalho__item-menu .cabecalho__item-menu-botao">
+                        <a href="#">Cardápio</a>
+                    </li>
+                    <li class="cabecalho__item-menu .cabecalho__item-menu-botao">
+                        <a href="#">Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mb-4">
+        <section class="bg_img_central">
+         	<article class="chamada__central__canal central__informacao icone--central">
+				<h2 class="cabecalho__titulo">Seja bem-vindo ao nosso cardápio</h2>
+				<p class="cabecalho__texto">Escolha os lanches para matar sua fome, e logo após clique em confirmar pedido!</p>
+			</article>            
+		</section>
+        <br>
+        <table	class="table table-hover rounded-top">
+            <thead	class="thead-dark">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Lanche</th>
+                    <th scope="col"></th>
+                    <th	scope="col"class="centralizado">Ingredientes</th>
+                    <th scope="col"class="centralizado">Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="col"class="centerchecklanche"><input	onclick="adicionaLanche(this)" type="checkbox" name="lanche" value="20"></td>
+                    <td scope="col"class="centerchecklanche">X-bacon</td>
+                    <td scope="col"><img src="img/x-bacon.jpg" alt="x-bacon"></td>
+                    <td scope="col"class="centralizado">
+                    Maionese caseira,
+                    <br>
+                    mostarda e ketchup,
+                    <br>
+                    hambúrgueres com molho,
+                    <br>
+                    duas fatias de queijo cheddar,
+                    <br>
+                    bacon e o pão</td>
+                    <td class="centralizado">R$ 30,00</td>
+                </tr>
+                <tr	class="bg-dark	text-light">
+                    <td>Total</td>
+                    <td	class="js-total-de-lanches">0 lanche(s)</td>
+                    <td	class="js-total-de-horas">0h</td>
+                </tr>
+            </tbody>
+        </table>
+        <button	type="button" class="fa-blink js-botao-matricula	btn	btn-outline-dark	btn-lg	mb-4">Confirmar	Pedido</button>
+    </main>
+    <script	src="fernando.js"></script>
+</body>
+</html>
+
+
+
+
